@@ -21,7 +21,7 @@ Mandrill = {
             metadata: ['list', 'add', 'update', 'delete']
         };
         var headers = {
-            'User-Agent': 'Meteor package wylio:mandrill/1.0.0'
+            'User-Agent': 'Meteor package wylio:mandrill/1.1.0'
         };
 
         var instance = this;
