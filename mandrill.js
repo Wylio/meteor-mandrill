@@ -30,8 +30,9 @@ Mandrill = {
         instance.options.port = options["port"] || "465";
         instance.options.host = "smtp.mandrillapp.com";
         instance.options.baseUrl = options.baseUrl || 'https://mandrillapp.com/api/1.0/';
-        // set the environment SMTP server
-        process.env.MAIL_URL = "smtp://" + this.options.username + ":" + this.options.key + "@" + this.options.host + ":" + this.options.port;
+        instance.options.protocol = options["protocol"] || this.options.port === "465" ? "smtps" : "smtp";
+        // set the environment mail server
+        process.env.MAIL_URL = this.options.protocol + "://" + this.options.username + ":" + this.options.key + "@" + this.options.host + ":" + this.options.port;
 
         // wrap the full Mandrill API
         Object.keys(categories).forEach(function (category) {
