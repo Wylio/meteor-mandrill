@@ -38,6 +38,7 @@ Mandrill.config({
   port: 587,  // defaults to 465 for SMTP over TLS
   host: 'smtps.mandrillapp.com',  // the SMTP host
   // baseUrl: 'https://mandrillapp.com/api/1.0/'  // update this in case Mandrill changes its API endpoint URL or version
+  // protocol: "smtps" // by default will put smtp unless port 465 (in that case smtps), you can override it here
 });
 
 // Meteor method code
