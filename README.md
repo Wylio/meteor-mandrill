@@ -1,3 +1,9 @@
+# DEPRECATED
+
+This package is [deprecated](https://github.com/Wylio/meteor-mandrill/issues/26). Consider using [@mailchimp/mailchimp_transactional](https://www.npmjs.com/package/@mailchimp/mailchimp_transactional) instead.
+
+------
+
 # Mandrill for Meteor [![Build Status](https://travis-ci.org/Wylio/meteor-mandrill.svg)](https://travis-ci.org/Wylio/meteor-mandrill/) [![Percentage of issues still open](http://isitmaintained.com/badge/open/Wylio/meteor-mandrill.svg)](http://isitmaintained.com/project/Wylio/meteor-mandrill "Percentage of issues still open") ![GitHub license](https://img.shields.io/:license-mit-blue.svg?style=flat)
 
 
